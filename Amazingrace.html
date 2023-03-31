@@ -1,34 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1>Welcome to my website!</h1>
-      <p>Here is some introductory text about my website.</p>
-      <form>
-        <label for="question">Question:</label>
-        <input type="text" id="question" name="question">
-        <input type="submit" value="Submit">
-      </form>
-    </main>
-    <footer>
-      <p>Copyright &copy; 2023</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bruce's Amazing Race</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="ar-image">
+
+  </header>
+  <main>
+    <div class="heading" style="
+      display: grid;
+      place-items: center;">
+      <h1>Bruce's Amazing Race</h1>
+    </div>
+    <p>This site is to help navigate you through the amazing race I have created for you.</p>
+    <div>
+      <p>Please choose your team from the list below</p>
+    </div>
+    <div class="team">
+      <ul class="color-options">
+        <li><span class="color-icon red" data-color="#FF5733"></span> Red</li>
+        <li><span class="color-icon yellow" data-color="#FFFF66"></span> Yellow</li>
+        <li><span class="color-icon green" data-color="#66FF66"></span> Green</li>
+        <li><span class="color-icon blue" data-color="#33CCCC"></span> Blue</li>
+        <li><span class="color-icon purple" data-color="#FF33FF"></span> Purple</li>
+      </ul>
+    </div>
+
+    <h2>Answer the cryptic crossword below to get your first task:</h2>
+    <div class="question">
+      <label for="inputField">Many at a bakers dance (9)</label><br>
+      <input type="text" id="inputField">
+      <button onclick="checkInput()">Check Input</button>
+      <p id="output"></p>
+    </div>
+  </main>
+  <footer>
+    <p>Copyright &copy; 2023</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
- 
+
+<script>
+  // for background change on icon click
+  const colorIcons = document.querySelectorAll('.color-icon');
+  const body = document.querySelector('body');
+
+  colorIcons.forEach((icon) => {
+    icon.addEventListener('click', () => {
+      const color = icon.getAttribute('data-color');
+      body.style.backgroundColor = color;
+    });
+  });
+
+// input checker
+  function checkInput() {
+  var input = document.getElementById("inputField").value;
+  if (input === "abundance") {
+    document.getElementById("output").innerHTML = "Input is correct!";
+    // Add code to move to next question here
+  } else {
+    document.getElementById("output").innerHTML = "Input is incorrect.";
+  }
+}
+</script>
