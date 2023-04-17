@@ -32,42 +32,22 @@
       </ul>
     </div>
 
-    <h2>Answer the cryptic crossword below to get your first task:</h2>
-    <div class="question">
-      <label for="inputField">Many at a bakers dance (9)</label><br>
-      <input type="text" id="inputField">
-      <button onclick="checkInput()">Check Input</button>
-      <p id="output"></p>
-    </div>
+    <h2 style="margin-bottom: 20px;">Here with begin your journey...</h2>
+
+
+    <div class="quz"></div>
+    <div class="ouput"></div>
+    
+ <!-- This is the quiz container for quiz questions etc-->
+  
+
+
   </main>
   <footer>
     <p>Copyright &copy; 2023</p>
   </footer>
-  <script src="script.js"></script>
+  <script src="js quiz questions.js"></script>
 </body>
 
 </html>
 
-<script>
-  // for background change on icon click
-  const colorIcons = document.querySelectorAll('.color-icon');
-  const body = document.querySelector('body');
-
-  colorIcons.forEach((icon) => {
-    icon.addEventListener('click', () => {
-      const color = icon.getAttribute('data-color');
-      body.style.backgroundColor = color;
-    });
-  });
-
-// input checker
-  function checkInput() {
-  var input = document.getElementById("inputField").value;
-  if (input === "abundance") {
-    document.getElementById("output").innerHTML = "Input is correct!";
-    // Add code to move to next question here
-  } else {
-    document.getElementById("output").innerHTML = "Input is incorrect.";
-  }
-}
-</script>

@@ -1,15 +1,91 @@
 // Define quiz questions and answers with image URLs
 var quizData = [
   {
-    question: "What is 2+2?",
-    answer: "4",
-    image: "https://cdn.pixabay.com/photo/2016/06/13/00/54/mathematics-1453413_960_720.jpg"
+    question: "",
+    answer: "jkrc",
+    image: "",
+    description: "What is the starting code?",
+    hint: "",
+    task: ""
   },
   {
-    question: "What is the capital of France?",
-    answer: "Paris",
-    image: "https://cdn.pixabay.com/photo/2016/09/22/13/52/eiffel-tower-1686314_960_720.jpg"
+    question: " Who wins? By how much? Answer with adam's score-eve's score e.g 10-0",
+    answer: "7-3",
+    image: "bread_dance.jpg",
+    description: "Adam and Eve play rock-paper-scissors 10 times. You know that: Adam uses rock three times, scissors six times, and paper once. Eve uses rock twice, scissors four times, and paper four times. There are no ties in all 10 games. The order of games is unknown.",
+    hint: "Adam",
+    task: ""
   },
+  {
+    question: "Find your teams page and enter the code on the back.",
+    answer: "parmasean",
+    image: "bread_dance.jpg",
+    description: "In the forest you will find some colourful pages dashed around.",
+    hint: "a type of protection brand",
+    task: ""
+  },
+  {
+    question: "What is the solution?",
+    answer: "durex",
+    image: "bread_dance.jpg",
+    description: "In xerud back, this clue is found purchase one from a shop around.",
+    hint: "a type of protection brand",
+    task: ""
+  },
+  {
+    question: "Many at a bakers dance",
+    answer: "abundance",
+    image: "bread_dance.jpg",
+    description: "To unlock your first task answer this cryptic crossword (9 letters).",
+    hint: "another word for a lot",
+    task: "Get to fournos and buy a croissant"
+  },
+  {
+    question: "What's the next best move for white?",
+    answer: "",
+    image: "bread_dance.jpg",
+    description: "Mate in 3 ",
+    hint: "",
+    task: "",
+  },
+  {
+    question: "Find your teams colour page and enter the code on it is the answer.",
+    answer: "",
+    image: "https://cdn.pixabay.com/photo/2016/06/13/00/54/mathematics-1453413_960_720.jpg",
+    description: "In the forest your colour will be found"
+  },
+  {
+    question: "What is 2+2?",
+    answer: "4",
+    image: "https://cdn.pixabay.com/photo/2016/06/13/00/54/mathematics-1453413_960_720.jpg",
+    description: "Do this"
+  },
+  {
+    question: "What is 2+2?",
+    answer: "4",
+    image: "https://cdn.pixabay.com/photo/2016/06/13/00/54/mathematics-1453413_960_720.jpg",
+    description: "Do this"
+  },
+  {
+    question: "What is 2+2?",
+    answer: "4",
+    image: "https://cdn.pixabay.com/photo/2016/06/13/00/54/mathematics-1453413_960_720.jpg",
+    description: "Do this"
+  },
+  {
+    question: "What is 2+2?",
+    answer: "4",
+    image: "https://cdn.pixabay.com/photo/2016/06/13/00/54/mathematics-1453413_960_720.jpg",
+    description: "Do this"
+  },
+  {
+    question: "What is 2+2?",
+    answer: "4",
+    image: "https://cdn.pixabay.com/photo/2016/06/13/00/54/mathematics-1453413_960_720.jpg",
+    description: "Do this"
+  }
+
+  
   // Add more questions here...
 ];
 
@@ -19,19 +95,40 @@ var quizIndex = 0;
 // Get quiz container element
 var quizContainer = document.getElementById("quiz");
 
-// Generate HTML for current quiz question
-function generateQuizQuestion() {
-  var currentQuestion = quizData[quizIndex];
-  var questionHTML = "<p>" + currentQuestion.question + "</p>" +
-                     "<img src='" + currentQuestion.image + "'>" +
-                     "<input type='text' id='inputField'>" +
-                     "<button onclick='checkAnswer()'>Submit</button>";
-  quizContainer.innerHTML = questionHTML;
+
+// or load question (instead of below)
+
+function loadQuestion() {
+  var questionContainer = document.getElementById("quiz");
+  questionContainer.style.backgroundImage = "url('" + quizData[currentQuestionIndex].image + "')";
+
+  var questionElement = document.getElementById("question");
+  questionElement.innerHTML = quizData[currentQuestionIndex].question;
+
+  var answerElement = document.getElementById("answer");
+  answerElement.value = "";
+
+  var descriptionElement = document.getElementById("description");
+  descriptionElement.innerHTML = quizData[currentQuestionIndex].description;
 }
+
+
+    // Generate HTML for current quiz question
+    function generateQuizQuestion() {
+      var currentQuestion = quizData[quizIndex];
+      var questionHTML = "<p>" + currentQuestion.description + "</p>" +
+                         "<p>" + currentQuestion.question + "</p>" +
+                         "<img src='" + currentQuestion.image + "'>" +
+                         "<input type='text' id='answer'>" +
+                         "<button class = 'button' onclick='checkAnswer()'>Submit</button>";
+      quizContainer.innerHTML = questionHTML;
+    }
+
+
 
 // Check user's answer against correct answer
 function checkAnswer() {
-  var input = document.getElementById("inputField").value;
+  var input = document.getElementById("answer").value;
   var currentQuestion = quizData[quizIndex];
   if (input === currentQuestion.answer) {
     document.getElementById("output").innerHTML = "Correct!";
@@ -48,5 +145,19 @@ function checkAnswer() {
   }
 }
 
+
+
 // Start quiz
 generateQuizQuestion();
+
+
+//change background colour
+const colorIcons = document.querySelectorAll('.color-icon');
+const body = document.querySelector('body');
+
+colorIcons.forEach((icon) => {
+  icon.addEventListener('click', () => {
+    const color = icon.getAttribute('data-color');
+    body.style.backgroundColor = color;
+  });
+});
