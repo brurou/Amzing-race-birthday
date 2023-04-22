@@ -5,7 +5,7 @@ var quizData = [
     answer: "jkrc",
     image: "",
     description: "What is the starting code?",
-    hint: "silly",
+    hint: "",
     task: "Let the games begin..."
   },
  
@@ -23,76 +23,119 @@ var quizData = [
     image: "",
     description: "In the forest you will find some colourful pages dashed around.",
     hint: "Look for pages stuck on trees",
-    task: "Find your teams colour and enter the clue to"
+    task: "Can't believe you kept this from us for such a long time 'Sean', oh well onto the next."
   },
   {
     question: "What am I.",
-    answer: "parmasean",
-    image: "bread_dance.jpg",
+    answer: "bank",
+    image: "",
     description: "I am a place where you can store your wealth, But not in the form of physical health. You can deposit and withdraw as you please. But I am not a vending machine or a sleaze.",
-    hint: "a type of protection brand",
-    task: "Outside the big blue where ground was broke, you will find the answer to the next question"
+    hint: "most of us work for one",
+    task: "Time to check that fitness, off to Rosebank now."
   },
   {
-    question: "What is the solution?",
-    answer: "durex",
-    image: "bread_dance.jpg",
-    description: "In xerud back, this clue is found purchase one from a shop around.",
-    hint: "a type of protection brand",
-    task: ""
+    question: "You will need to look hard for the pages.",
+    answer: "Village",
+    image: "",
+    description: "Outside big blue where the ground was first broke, hidden in a tube lies your next stroke",
+    hint: "Look for the pick axe",
+    task: "Well found! Time for something different."
   },
   {
     question: "Many at a bakers dance",
     answer: "abundance",
-    image: "bread_dance.jpg",
-    description: "To unlock your first task answer this cryptic crossword (9 letters).",
+    image: "",
+    description: "To unlock your next task answer this cryptic crossword (9 letters).",
     hint: "another word for a lot",
-    task: "Get to fournos and buy a croissant"
+    task: "Get to fournos and buy a baked good (if its closed then Bootleggers across the way)"
   },
+  
   {
-    question: "What's the next best move for white?",
+    question: "Name the sex position in the image below",
+    answer: "butter churner",
+    image: "sex pos.jpg",
+    description: "I hope that was a tastey break, but no time for slacking a treasurer awaits.",
+    hint: "your do it to goat and cow milk to make something...",
+    task: "Nice work, if you got that on the first go come speak to me after the race!"
+  },
+  
+  {
+    question: "No answer to this question just click submit.",
     answer: "",
-    image: "bread_dance.jpg",
-    description: "Mate in 3 ",
+    image: "beatles.jpg",
+    description: "You need to re-enact the infamous beatles photo below (and take a picture).",
     hint: "",
-    task: "",
+    task: "There's nothing you can do that can't be done. ",
   },
+
   {
-    question: "Find your teams colour page and enter the code on it is the answer.",
+    question: "What is it?",
+    answer: "durex",
+    image: "",
+    description: "In xerud back this clue is found, purchase one from a shop around",
+    hint: "a type of protection brand",
+    task: "Get a condom, you dont need to buy one if you can get one from a public bathroom that's fine. P.S Jake and Rich you can't use any of the ones in your wallets they have been there for too long! ",
+  },
+
+  {
+    question: "e.g rb6+ qxh5 rc8# (where rb6+ - means rook to B6 check, and qxh5 - means the queen must take on h5, and rc8# - rook to C8 check mate), dont put any comma's just first move then space second move space third move.",
+    answer: "qg8+ qe6+ qd6#",
+    image: "m3.jpg",
+    description: "Any Bobby Fischer's in the house? White has mate in 3 can you find the right moves? ",
+    hint: "",
+    task: "Genius, I think you ready to take on Magnus!",
+  },
+
+  {
+    question: "What do you call someone who cries every time they masturbate? - Clue its not Dean",
+    answer: "tearjearker",
+    image: "",
+    description: "Joke time. (One word)",
+    hint: "a something jerker ",
+    task: "Sorry Deano i'm just projecting here. ",
+  },
+
+  {
+    question: "No answer here just click submit",
     answer: "",
-    image: "https://cdn.pixabay.com/photo/2016/06/13/00/54/mathematics-1453413_960_720.jpg",
-    description: "In the forest your colour will be found"
+    image: "",
+    description: "Go buy a food item that matches your teams colour. Be sure to bring it back safely.",
+    hint: "",
+    task: "Time for some ebarassment!",
   },
   {
-    question: "What is 2+2?",
-    answer: "4",
-    image: "https://cdn.pixabay.com/photo/2016/06/13/00/54/mathematics-1453413_960_720.jpg",
-    description: "Do this"
+    question: "Host an impromptu mob dance (doesn't have to be long) and then post the video to the group. When you done just click submit.",
+    answer: "",
+    image: "mob.jpg",
+    description: "Ever seen a mob dance and thought, wow that would be super fun to be a part of?",
+    hint: "",
+    task: "I'm sure that was spectacular to watch and I will keep the footage forever.",
   },
   {
-    question: "What is 2+2?",
-    answer: "4",
-    image: "https://cdn.pixabay.com/photo/2016/06/13/00/54/mathematics-1453413_960_720.jpg",
-    description: "Do this"
+    question: "What am I?",
+    answer: "bar",
+    image: "beatles.jpg",
+    description: "I am a word that can mean a measure of gold, But I am not a gram or a mold. I can also mean a place to have a drink, But I am not a pub or a sink.",
+    hint: "The purchase of alcohol is frequently done there (3 letters)",
+    task: "I'm sure you thirsty, head to Tasha's and buy a beer ro cocktail (don't forget to take a picture). ",
   },
   {
-    question: "What is 2+2?",
-    answer: "4",
-    image: "https://cdn.pixabay.com/photo/2016/06/13/00/54/mathematics-1453413_960_720.jpg",
-    description: "Do this"
+    question: "Get a picture with a security gaurd or any wearing an official uniform. Then click submit",
+    answer: "",
+    image: "beatles.jpg",
+    description: "Thirst quenched?  ",
+    hint: "",
+    task: "We reaching the end of our journey, but there's still work to be done. ",
   },
   {
-    question: "What is 2+2?",
-    answer: "4",
-    image: "https://cdn.pixabay.com/photo/2016/06/13/00/54/mathematics-1453413_960_720.jpg",
-    description: "Do this"
+    question: "What am I?",
+    answer: "wanderer",
+    image: "beatles.jpg",
+    description: "I am someone who roams from place to place, But I am not a bird or a race. I carry my home on my back, And I am always on a journey or a track.",
+    hint: "The sports club where i live (singular)",
+    task: "Make your way back to the padel gardens I'll see you there!",
   },
-  {
-    question: "What is 2+2?",
-    answer: "4",
-    image: "https://cdn.pixabay.com/photo/2016/06/13/00/54/mathematics-1453413_960_720.jpg",
-    description: "Do this"
-  }
+
 
   
   // Add more questions here...
@@ -170,7 +213,7 @@ function checkAnswer() {
     numTries++;
     resultElem.textContent = "Incorrect! Try again.";
     if (numTries >= 3) {
-      resultElem.textContent += " Here's a hint: " + questionObj.hint;
+      resultElem.textContent += " Not so smart hey here's a clue to help: " + questionObj.hint;
     }
   }
 }
@@ -178,7 +221,7 @@ function checkAnswer() {
 function goToNextQuestion() {
   currentQuestion++;
   if (currentQuestion === quizData.length) {
-    alert("You have completed the quiz!");
+    alert("Congratulations you are finished!");
   } else {
     displayQuestion();
   }
