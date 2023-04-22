@@ -5,24 +5,33 @@ var quizData = [
     answer: "jkrc",
     image: "",
     description: "What is the starting code?",
-    hint: "",
-    task: "High Five"
+    hint: "silly",
+    task: "Let the games begin..."
   },
+ 
   {
-    question: " Who wins? By how much? Answer with adam's score-eve's score e.g 10-0",
+    question: "Who wins? By how much? Answer with adam's score-eve's score e.g 10-0",
     answer: "7-3",
-    image: "bread_dance.jpg",
+    image: "rps.jpg",
     description: "Adam and Eve play rock-paper-scissors 10 times. You know that: Adam uses rock three times, scissors six times, and paper once. Eve uses rock twice, scissors four times, and paper four times. There are no ties in all 10 games. The order of games is unknown.",
-    hint: "Adam",
-    task: "Jump up and down"
+    hint: "Eve didn't play scissors any of the 6 times Adam did so then you can work out how many of those six games Adam won.",
+    task: "I'm a fan of Lazarus and his race especially the part with the pages! "
   },
   {
     question: "Find your teams page and enter the code on the back.",
     answer: "parmasean",
-    image: "bread_dance.jpg",
+    image: "",
     description: "In the forest you will find some colourful pages dashed around.",
+    hint: "Look for pages stuck on trees",
+    task: "Find your teams colour and enter the clue to"
+  },
+  {
+    question: "What am I.",
+    answer: "parmasean",
+    image: "bread_dance.jpg",
+    description: "I am a place where you can store your wealth, But not in the form of physical health. You can deposit and withdraw as you please. But I am not a vending machine or a sleaze.",
     hint: "a type of protection brand",
-    task: ""
+    task: "Outside the big blue where ground was broke, you will find the answer to the next question"
   },
   {
     question: "What is the solution?",
